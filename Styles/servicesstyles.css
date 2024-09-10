@@ -1,0 +1,326 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-logo-img {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo, .footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust font size */
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.services-intro {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: url('/Images/services/banner.jpg') no-repeat center center; 
+    background-size: cover;
+    color: #ffffff;
+}
+
+.services-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
+    z-index: 1;
+}
+
+.services-intro h2,
+.services-intro p,
+.services-intro .btn {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.services-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.services-intro .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.services-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-list {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-item {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.service-item h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+}
+
+.btn-reservation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-branding, .footer-links, .footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: #ffffff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #68acf5; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries for Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .services-intro {
+        padding: 40px;
+    }
+
+    .services-intro h2 {
+        font-size: 28px;
+    }
+
+    .services-intro p {
+        font-size: 18px;
+    }
+
+    .services-intro .btn {
+        padding: 12px 24px;
+    }
+
+    .services-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .service-item {
+        width: 48%;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        font-size: 18px; /* Larger font size on tablets */
+    }
+
+    .logo, .footer-logo {
+        font-size: 28px; /* Slightly larger text on tablets and up */
+    }
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .services-intro {
+        padding: 60px;
+    }
+
+    .services-intro h2 {
+        font-size: 32px;
+    }
+
+    .services-intro p {
+        font-size: 20px;
+    }
+
+    .services-intro .btn {
+        padding: 15px 30px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .Para{
+        text-align: left;
+    }
+
+    .service-item {
+        width: 30%;
+    }
+
+    .footer-links a {
+        font-size: 20px; /* Even larger font size on desktops */
+    }
+
+    
+}

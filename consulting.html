@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalCare</title>
+    <link rel="stylesheet" href="Styles/consultingstyles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Images/home/logo.png" alt="MedicalCare Logo" class="nav-logo">
+                MedicalCare
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </nav>
+            <a href="consulting.html" class="contact-btn">Contact Us</a>
+            <button class="menu-btn">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="consulting-intro">
+            <h2>Consult with Our Experts</h2>
+            <p>Fill out the form below to schedule a consultation with one of our medical experts.</p>
+        </section>
+
+        <section class="consulting-form">
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="consult-type">Consultation Type</label>
+                    <select id="consult-type" name="consult-type">
+                        <option value="general">General</option>
+                        <option value="specialist">Specialist</option>
+                        <option value="specialist">Surgical Consultations</option>
+                        <option value="specialist">Rehabilitation Services</option>
+                        <option value="specialist">Mental Health Services</option>
+                        <option value="specialist">Women's Health Services</option>
+                        <option value="specialist">Pediatric Services</option>
+                        <option value="specialist">Diagnostic Services</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Preferred Doctor</label>
+                    <select id="doctor" name="doctor">
+                        <option value="dr-john-doe">Dr. Emily Smith</option>
+                        <option value="dr-jane-smith">Dr. James Anderson</option>
+                        <option value="dr-jane-smith">Dr. Michael Lee</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional notes</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="index.html" class="footer-logo">
+                    <img src="Images/home/logo.png" alt="MedicalCare Logo" class="footer-logo-img">
+                    MedicalCare
+                </a>
+                <p class="Para">We are honored to be a part of your healthcare journey and committed to delivering compassionate, personalized, and top-notch care every step of the way.
+
+                    Trust us with your health, and let us work together to achieve the best possible outcomes for you and your loved ones</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="consulting.html">Contact Us</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Information</h4>
+                <p>123 Medical St., Health City</p>
+                <p>Email: contact@medicalcare.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

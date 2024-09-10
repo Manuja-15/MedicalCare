@@ -1,0 +1,353 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-logo-img {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo, .footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust font size */
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.doctors-intro {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: url('/Images/doctors/banner.jpg') no-repeat center center; 
+    background-size: cover;
+    color: #ffffff;
+}
+
+.doctors-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
+    z-index: 1;
+}
+
+.doctors-intro h2,
+.doctors-intro p {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.doctors-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.doctors-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.doctors-intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.doctors-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.doctors-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.doctors-carousel {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor-item {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 100%;
+}
+
+.doctor-photo-1 {
+   
+    background-color: #ccc;
+    margin-bottom: 10px;
+    background-image: url("../Images/doctors/dr-emily.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+}
+
+.doctor-photo-2 {
+   
+    background-color: #ccc;
+    margin-bottom: 10px;
+    background-image: url("../Images/doctors/dr-james.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+}
+
+.doctor-photo-3 {
+   
+    background-color: #ccc;
+    margin-bottom: 10px;
+    background-image: url("../Images/doctors/dr-michael.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50vh;
+}
+
+.social-links a {
+    margin: 5px;
+    display: inline-block;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the icons */
+}
+
+.social-links a {
+    color: #454242; /* Default icon color */
+    font-size: 24px; /* Default icon size */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #68acf5; /* Change color on hover */
+}
+
+.carousel-navigation {
+    margin-top: 20px;
+}
+
+.carousel-prev, .carousel-next {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-branding, .footer-links, .footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: #ffffff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #68acf5; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries for Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .doctors-intro {
+        padding: 40px;
+    }
+
+    .doctors-intro h2 {
+        font-size: 28px;
+    }
+
+    .doctors-intro p {
+        font-size: 18px;
+    }
+
+    .doctors-carousel {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .doctor-item {
+        width: 30%;
+    }
+
+    .social-links a {
+        font-size: 28px; /* Larger icons on tablets */
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        font-size: 18px; /* Larger font size on tablets */
+    }
+
+    .logo, .footer-logo {
+        font-size: 28px; /* Slightly larger text on tablets and up */
+    }
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .doctors-intro {
+        padding: 60px;
+    }
+
+    .doctors-intro h2 {
+        font-size: 32px;
+    }
+
+    .doctors-intro p {
+        font-size: 20px;
+    }
+
+    .social-links a {
+        font-size: 32px; /* Even larger icons on desktops */
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .Para{
+        text-align: left;
+    }
+
+    .footer-links a {
+        font-size: 20px; /* Even larger font size on desktops */
+    }
+
+    .logo, .footer-logo {
+        font-size: 32px; /* Even larger text on desktops */
+    }
+}

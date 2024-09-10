@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedicalCare - Pharmacy</title>
+    <link rel="stylesheet" href="Styles/pharmacystyles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Images/home/logo.png" alt="MedicalCare Logo" class="nav-logo">
+                MedicalCare
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="consulting.html">Consulting</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </nav>
+            <a href="consulting.html" class="contact-btn">Contact Us</a>
+            <button class="menu-btn">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="pharmacy-intro">
+            <h2>Online Pharmacy</h2>
+            <p>Refill your prescriptions and order your medications online with ease. Our pharmacy services are available 24/7 to meet your needs.</p>
+        </section>
+
+        <section class="pharmacy-content">
+            <div class="pharmacy-search">
+                <h3>Search for Medications</h3>
+                <p>Find the medication you need using our search tool.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="medication">Medication Name</label>
+                        <input type="text" id="medication" name="medication" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category" name="category">
+                            <option value="allergy">Allergy</option>
+                            <option value="pain-relief">Pain Relief</option>
+                            <option value="cold-flu">Cold & Flu</option>
+                            <option value="allergy">Skin Care</option>
+                            <option value="allergy">Eye Care</option>
+                            <option value="allergy">Ear Care</option>
+                            <option value="allergy">Vitamins & Supplements</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="pharmacy-refill">
+                <h3>Refill Your Prescription</h3>
+                <p>Quickly and easily refill your prescription online.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="prescription-number">Prescription Number</label>
+                        <input type="text" id="prescription-number" name="prescription-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="doctor">Doctor's Name</label>
+                        <input type="text" id="doctor" name="doctor" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <select id="quantity" name="quantity">
+                            <option value="30">30 Tablets</option>
+                            <option value="60">60 Tablets</option>
+                            <option value="90">90 Tablets</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Refill Prescription</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <a href="index.html" class="footer-logo">
+                    <img src="Images/home/logo.png" alt="MedicalCare Logo" class="footer-logo-img">
+                    MedicalCare
+                </a>
+                <p class="Para">We are honored to be a part of your healthcare journey and committed to delivering compassionate, personalized, and top-notch care every step of the way.
+
+                    Trust us with your health, and let us work together to achieve the best possible outcomes for you and your loved ones</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="consulting.html">Contact Us</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Information</h4>
+                <p>123 Medical St., Health City</p>
+                <p>Email: contact@medicalcare.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

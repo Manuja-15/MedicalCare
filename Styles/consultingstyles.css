@@ -1,0 +1,343 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, form, input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-logo-img {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo, .footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust font size */
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.consulting-intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.consulting-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.consulting-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.consulting-form {
+    padding: 20px;
+}
+
+.consulting-form {
+    position: relative;
+    padding: 20px;
+    background: url('/Images/consulting/bg-img.jpg') no-repeat center center; 
+    background-size: cover;
+    color: #ffffff;
+}
+
+.consulting-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
+    z-index: 1;
+}
+
+.consulting-form form {
+    position: relative;
+    z-index: 2; /* Ensure the form is above the overlay */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group button {
+    display: inline-block;
+    padding: 200px 40px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button:hover {
+    background-color: #68acf5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-branding, .footer-links, .footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: #ffffff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #68acf5; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Media Queries for Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .consulting-form form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .form-group {
+        width: 48%;
+    }
+
+    .form-group textarea {
+        width: 100%;
+    }
+
+    .form-group button {
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .consulting-form {
+        padding: 40px;
+    }
+
+    .consulting-form form {
+        padding: 30px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+    }
+
+    .form-group button {
+        padding: 12px 24px;
+    }
+
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        font-size: 18px; /* Larger font size on tablets */
+    }
+
+    .logo, .footer-logo {
+        font-size: 28px; /* Slightly larger text on tablets and up */
+    }
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .Para{
+        text-align: left;
+    }
+
+    .consulting-form form {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        width: 48%;
+    }
+
+    .consulting-form {
+        padding: 60px;
+    }
+
+    .consulting-form form {
+        padding: 40px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 15px;
+    }
+
+    .form-group button {
+        padding: 20px 40px;
+        margin-top: 23%;
+        margin-left: 70%;
+    }
+
+    .footer-links a {
+        font-size: 20px; /* Even larger font size on desktops */
+    }
+
+    .logo, .footer-logo {
+        font-size: 32px; /* Even larger text on desktops */
+    }
+}

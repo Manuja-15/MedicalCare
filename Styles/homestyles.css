@@ -1,0 +1,327 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-logo-img {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo, .footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust font size */
+}
+
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services-overview {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.service-item {
+    margin-bottom: 20px;
+}
+
+.location {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-branding, .footer-links, .footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: #ffffff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #68acf5; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.location {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.map-container {
+    width: 100%;
+    height: 300px; 
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.location iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.hero {
+    position: relative;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/Images/home/bck-groun-img.jpg');
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback background color */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensures content appears above the background image */
+    color: white; /* Text color to contrast against the dark background */
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
+    z-index: 1; /* Ensures the overlay is between the background image and the content */
+}
+
+.hero h2 {
+    font-size: 1.5em; /* Smaller font size for mobile */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media Queries for Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .map-container {
+        height: 400px; 
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Larger font size for tablets */
+    }
+
+    .hero p {
+        font-size: 1.25em;
+    }
+
+    .footer-links a {
+        font-size: 18px; /* Larger font size on tablets */
+    }
+
+    .logo, .footer-logo {
+        font-size: 28px; /* Slightly larger text on tablets and up */
+    }
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .Para{
+        text-align: left;
+    }
+
+    .map-container {
+        height: 450px; 
+        max-width: 800px; 
+    }
+
+    .hero {
+        padding: 60px;
+    }
+
+    .hero h2 {
+        font-size: 2.5em; /* Even larger font size for desktops */
+    }
+
+    .hero p {
+        font-size: 1.5em;
+    }
+
+    .hero .btn {
+        padding: 15px 30px;
+    }
+
+    .footer-branding, .footer-links, .footer-contact {
+        margin-bottom: 20px;
+    }
+
+    .footer-links a {
+        font-size: 20px; /* Even larger font size on desktops */
+    }
+
+    .logo, .footer-logo {
+        font-size: 32px; /* Even larger text on desktops */
+    }
+}

@@ -1,0 +1,464 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, form, input, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-logo {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.footer-logo-img {
+    height: 40px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.logo, .footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+    font-size: 24px; /* Adjust font size */
+}
+
+.nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.nav-links li {
+    margin: 5px 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.contact-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menu-btn {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.volunteer-intro {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    background: url('/Images/volunteer/banner.jpg') no-repeat center center; /* Adjust the path */
+    background-size: cover;
+    color: #ffffff;
+}
+
+.volunteer-intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
+    z-index: 1;
+}
+
+.volunteer-intro h2,
+.volunteer-intro p {
+    position: relative;
+    z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.volunteer-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.volunteer-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.volunteer-intro {
+    padding: 20px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.volunteer-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.volunteer-intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.opportunities {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the boxes */
+    padding: 20px;
+}
+
+.opportunity {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.volunteer-opportunities {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.opportunity {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.opportunity h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.opportunity p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select,
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.testimonial-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.volunteer-testimonials {
+    padding: 20px;
+}
+
+.volunteer-testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.testimonial-photo {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.testimonial-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #333; /* Default icon and text color */
+    font-size: 16px; /* Default icon size */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a i {
+    margin-right: 5px; /* Space between the icon and the text */
+}
+
+.social-links a:hover {
+    color: #68acf5; /* Change color on hover */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-branding, .footer-links, .footer-contact {
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: #ffffff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.footer-links a:hover {
+    color: #68acf5; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+/* Media Queries for Tablet */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .volunteer-intro {
+        padding: 40px;
+    }
+
+    .volunteer-intro h2 {
+        font-size: 28px;
+    }
+
+    .volunteer-intro p {
+        font-size: 18px;
+    }
+
+    .opportunities {
+        flex-direction: row; /* Align boxes in a row on larger screens */
+    }
+
+    .opportunity {
+        flex: 1; /* Make each box take up equal width */
+        margin: 0 10px; /* Add margin between boxes */
+    }
+
+    .opportunity:first-child {
+        margin-left: 0; /* Remove left margin for the first box */
+    }
+
+    .opportunity:last-child {
+        margin-right: 0; /* Remove right margin for the last box */
+    }
+
+    .volunteer-opportunities {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .opportunity {
+        width: 48%;
+    }
+
+    .testimonial-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .testimonial-photo {
+        margin-right: 20px;
+    }
+
+    .testimonial-content {
+        flex: 1;
+    }
+
+    .social-links a {
+        font-size: 18px; /* Larger icons and text on tablets */
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-links a {
+        font-size: 18px; /* Larger font size on tablets */
+    }
+
+    .logo, .footer-logo {
+        font-size: 28px; /* Slightly larger text on tablets and up */
+    }
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 1024px) {
+    .container {
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .Para{
+        text-align: left;
+    }
+
+    .volunteer-intro {
+        padding: 60px;
+    }
+
+    .volunteer-intro h2 {
+        font-size: 32px;
+    }
+
+    .volunteer-intro p {
+        font-size: 20px;
+    }
+
+    .opportunities {
+        padding: 40px; /* Increase padding on larger screens */
+    }
+
+    .opportunity {
+        padding: 30px; /* Increase padding inside the boxes */
+    }
+
+    .volunteer-opportunities {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .testimonial-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .testimonial {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    .social-links a {
+        font-size: 20px; /* Even larger icons and text on desktops */
+    }
+
+    .footer-links a {
+        font-size: 20px; /* Even larger font size on desktops */
+    }
+
+    .logo, .footer-logo {
+        font-size: 32px; /* Even larger text on desktops */
+    }
+}
