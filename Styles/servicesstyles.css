@@ -78,7 +78,7 @@ header {
     position: relative;
     padding: 20px;
     text-align: center;
-    background: url('/Images/services/banner.jpg') no-repeat center center; 
+    background: url('../Images/services/banner.jpg') no-repeat center center; 
     background-size: cover;
     color: #ffffff;
 }

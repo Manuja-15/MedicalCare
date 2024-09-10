@@ -98,7 +98,7 @@ header {
 .consulting-form {
     position: relative;
     padding: 20px;
-    background: url('/Images/consulting/bg-img.jpg') no-repeat center center; 
+    background: url('../Images/consulting/bg-img.jpg') no-repeat center center; 
     background-size: cover;
     color: #ffffff;
 }
