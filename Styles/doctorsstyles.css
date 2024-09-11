@@ -222,6 +222,7 @@ header {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
+    background-color: #b4d7fd;
 }
 
 .doctor-item {
@@ -418,8 +419,8 @@ footer {
 
     .doctors-carousel {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* Three columns */
+        grid-template-columns: repeat(3, 1fr);/* Three columns */
+        background-color: #b4d7fd;
         margin: auto;
 
 

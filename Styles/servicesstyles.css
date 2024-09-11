@@ -149,6 +149,7 @@ header {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    background-color: #b4d7fd;
 }
 
 .service-item {
@@ -230,6 +231,36 @@ footer {
     text-decoration: underline; /*  underlines with hover */
 }
 
+.services-overview {
+    padding: 20px;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.services-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    list-style-type: decimal; /* Numbered list for main headings */
+    padding-left: 20px;
+}
+
+.services-text {
+    flex: 1;
+}
+
+.services-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
 /* Styles for Tablet */
 @media (min-width: 768px) {
     .container {
@@ -266,6 +297,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        background-color: #b4d7fd;
     }
 
     .service-item {
@@ -283,6 +315,27 @@ footer {
 
     .logo, .footer-logo {
         font-size: 28px; 
+    }
+
+    .services-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .services-text {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .services-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .services-image img {
+        width: 100%;
+        max-width: 400px;
     }
 }
 
@@ -324,6 +377,10 @@ footer {
 
     .footer-links a {
         font-size: 20px; 
+    }
+
+    .services-image img {
+        max-width: 500px;
     }
 
     
