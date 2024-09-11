@@ -1,5 +1,10 @@
 /* basic elements */
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -23,23 +28,24 @@ header {
 }
 
 .nav-logo {
-    height: 40px; 
+    height: 40px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
 .footer-logo-img {
-    height: 40px; 
+    height: 40px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
-.logo, .footer-logo {
+.logo,
+.footer-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333; 
-    font-size: 24px; 
+    color: #333;
+    font-size: 24px;
 }
 
 .nav-links {
@@ -79,7 +85,7 @@ header {
     position: relative;
     padding: 20px;
     text-align: center;
-    background: url('../Images/doctors/banner.jpg') no-repeat center center; 
+    background: url('../Images/doctors/banner.jpg') no-repeat center center;
     background-size: cover;
     color: #ffffff;
 }
@@ -91,14 +97,16 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark overlay to make the image lighter */
     z-index: 1;
 }
 
 .doctors-intro h2,
 .doctors-intro p {
     position: relative;
-    z-index: 2; /* make sure the content is infront of the overlay */
+    z-index: 2;
+    /* make sure the content is infront of the overlay */
 }
 
 .doctors-intro h2 {
@@ -144,7 +152,7 @@ header {
 }
 
 .doctor-photo-1 {
-   
+
     background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-emily.jpg");
@@ -155,7 +163,7 @@ header {
 }
 
 .doctor-photo-2 {
-   
+
     background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-james.jpg");
@@ -166,7 +174,7 @@ header {
 }
 
 .doctor-photo-3 {
-   
+
     background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-michael.jpg");
@@ -177,7 +185,7 @@ header {
 }
 
 .doctor-photo-4 {
-   
+
     background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-mike.jpg");
@@ -188,7 +196,7 @@ header {
 }
 
 .doctor-photo-5 {
-   
+
     background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-david.jpg");
@@ -199,8 +207,8 @@ header {
 }
 
 .doctor-photo-6 {
-   
-    background-color:#f9f9f9;
+
+    background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-Anne\ brown.jpg");
     background-repeat: no-repeat;
@@ -211,7 +219,7 @@ header {
 
 .doctors-carousel {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
 }
@@ -243,24 +251,29 @@ header {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; /* gap between the icons */
+    gap: 10px;
+    /* gap between the icons */
 }
 
 .social-links a {
-    color: #454242; /*  icon color */
-    font-size: 20px; /*  icon size */
+    color: #454242;
+    /*  icon color */
+    font-size: 20px;
+    /*  icon size */
     text-decoration: none;
 }
 
 .social-links a:hover {
-    color: #68acf5; /* color on hover */
+    color: #68acf5;
+    /* color on hover */
 }
 
 .carousel-navigation {
     margin-top: 20px;
 }
 
-.carousel-prev, .carousel-next {
+.carousel-prev,
+.carousel-next {
     background-color: #007bff;
     color: white;
     border: none;
@@ -277,7 +290,7 @@ footer {
     text-align: center;
 }
 
-.Para{
+.Para {
     text-align: left;
 }
 
@@ -286,7 +299,9 @@ footer {
     flex-direction: column;
 }
 
-.footer-branding, .footer-links, .footer-contact {
+.footer-branding,
+.footer-links,
+.footer-contact {
     margin-bottom: 20px;
 }
 
@@ -310,14 +325,16 @@ footer {
 }
 
 .footer-links a {
-    color: #ffffff; 
-    text-decoration: none; 
-    transition: color 0.3s ease, text-decoration 0.3s ease; 
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #68acf5; /*  link color when hovering */
-    text-decoration: underline; /*  underlines with hover */
+    color: #68acf5;
+    /*  link color when hovering */
+    text-decoration: underline;
+    /*  underlines with hover */
 }
 
 /* Styles for Tablet */
@@ -355,14 +372,13 @@ footer {
     .doctors-carousel {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Two columns */
-    }
-
-    .doctor-item {
         
     }
 
+    .doctor-item {}
+
     .social-links a {
-        font-size: 28px; 
+        font-size: 28px;
     }
 
     .footer-content {
@@ -371,11 +387,12 @@ footer {
     }
 
     .footer-links a {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
-    .logo, .footer-logo {
-        font-size: 28px; 
+    .logo,
+    .footer-logo {
+        font-size: 28px;
     }
 }
 
@@ -399,19 +416,20 @@ footer {
 
     .doctors-carousel {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        grid-template-columns: repeat(3, 1fr);
+        /* Three columns */
         margin: auto;
-        
-        
+
+
     }
 
-    .doctor-item{
+    .doctor-item {
         width: 90%;
-        
+
     }
 
     .social-links a {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .footer-content {
@@ -421,7 +439,7 @@ footer {
 
     }
 
-    .Para{
+    .Para {
         text-align: left;
     }
 
@@ -429,7 +447,8 @@ footer {
         font-size: 20px;
     }
 
-    .logo, .footer-logo {
-        font-size: 32px; 
+    .logo,
+    .footer-logo {
+        font-size: 32px;
     }
 }

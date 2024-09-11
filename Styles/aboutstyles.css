@@ -1,5 +1,10 @@
 /*basic elements */
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -23,23 +28,24 @@ header {
 }
 
 .nav-logo {
-    height: 40px; 
+    height: 40px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
 .footer-logo-img {
-    height: 40px; 
+    height: 40px;
     vertical-align: middle;
     margin-right: 10px;
 }
 
-.logo, .footer-logo {
+.logo,
+.footer-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333; 
-    font-size: 24px; 
+    color: #333;
+    font-size: 24px;
 }
 
 .nav-links {
@@ -81,24 +87,28 @@ header {
     background-color: #b4d7fd;
 }
 
-.about-us-text, .about-us-image {
+.about-us-text,
+.about-us-image {
     width: 100%;
-    margin-bottom: 20px; /* Adds gap between the text and image */
+    margin-bottom: 20px;
+    /* Adds gap between the text and image */
 }
 
 .about-us-text {
-    padding-right: 0; 
+    padding-right: 0;
 }
 
 .about-us-text h2 {
-    margin-top: 20px; /* gap above each heading */
-    font-size: 24px; 
+    margin-top: 20px;
+    /* gap above each heading */
+    font-size: 24px;
 }
 
 .about-us-text p {
-    margin-bottom: 20px; /* gap below paragraph */
-    line-height: 1.6; 
-    font-size: 16px; 
+    margin-bottom: 20px;
+    /* gap below paragraph */
+    line-height: 1.6;
+    font-size: 16px;
 }
 
 .about-us-image img {
@@ -121,45 +131,20 @@ header {
     margin-bottom: 20px;
 }
 
-.location {
-    padding: 20px;
-    background-color: #b4d7fd;
-}
-
-.map-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.location h3 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .map-branch {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.branch-info-section {
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.branch-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.branch-table th, .branch-table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-}
-
-.branch-table th {
-    background-color: #007bff;
-    color: white;
-}
-
-.branch-table td {
-    background-color: #ffffff;
+.branch-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .map-branch h4 {
@@ -176,6 +161,56 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.hospital-image-1 img, .hospital-image-2 img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.location {
+    padding: 20px;
+    background-color: #b4d7fd;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.branch-info-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.branch-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.branch-table th,
+.branch-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.branch-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.branch-table td {
+    background-color: #ffffff;
+}
+
+
+
+
+
 footer {
     background-color: #333;
     color: white;
@@ -183,7 +218,7 @@ footer {
     text-align: center;
 }
 
-.Para{
+.Para {
     text-align: left;
 }
 
@@ -192,7 +227,9 @@ footer {
     flex-direction: column;
 }
 
-.footer-branding, .footer-links, .footer-contact {
+.footer-branding,
+.footer-links,
+.footer-contact {
     margin-bottom: 20px;
 }
 
@@ -217,14 +254,16 @@ footer {
 }
 
 .footer-links a {
-    color: #ffffff; 
-    text-decoration: none; 
-    transition: color 0.3s ease, text-decoration 0.3s ease; 
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .footer-links a:hover {
     color: #68acf5; /*  link color on hovering */
-    text-decoration: underline; /* underlines with hover */
+    
+    text-decoration: underline;/* underlines with hover */
+    
 }
 
 /* Styles  for Tablet */
@@ -253,17 +292,19 @@ footer {
     }
 
     .about-us-text h2 {
-        font-size: 28px; 
+        font-size: 28px;
     }
 
     .about-us-text p {
-        font-size: 18px; 
-        margin-bottom: 30px; /* Increase gaps  */
+        font-size: 18px;
+        margin-bottom: 30px;
+        /* Increase gaps  */
     }
 
     .about-us-image {
         flex: 1;
-        margin-bottom: 0; /* Remove bottom margin */
+        margin-bottom: 0;
+        /* Remove bottom margin */
     }
 
     .highlight-content {
@@ -285,22 +326,47 @@ footer {
         justify-content: space-between;
     }
 
-    .map-container {
+    .location-content {
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .map-container, .hospital-image {
+        flex: 1;
     }
 
     .map-branch {
-        width: 48%;
+        width: 100%;
+    }
+
+    .branch-details {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .map-branch iframe {
+        width: 100%;
+    }
+
+    .hospital-image-1 img, .hospital-image-2 img {
+        width: 100%;
+    }
+
+    .table-footer{
+        text-align: center;
+        font-weight: bold;
     }
 
 
     .footer-links a {
-        font-size: 18px; 
+        font-size: 18px;
     }
 
-    .logo, .footer-logo {
-        font-size: 28px; 
+    .logo,
+    .footer-logo {
+        font-size: 28px;
     }
 }
 
@@ -316,30 +382,45 @@ footer {
 
     }
 
-    .Para{
+    .Para {
         text-align: left;
     }
 
     .about-us-section {
-        padding: 40px; /* Increase padding */
+        padding: 40px;
+        /* Increase padding */
     }
 
     .about-us-text {
-        padding-right: 40px; /* Increase padding between text and image */
+        padding-right: 40px;
+        /* Increase padding between text and image */
     }
 
     .about-us-text h2 {
-        font-size: 32px; 
+        font-size: 32px;
     }
 
     .about-us-text p {
-        font-size: 20px; 
-        margin-bottom: 40px; 
+        font-size: 20px;
+        margin-bottom: 40px;
     }
 
+    .map-container iframe {
+        width: 100%;
+        height: 450px;
+    }
+
+    .map-branch iframe {
+        width: 100%;
+        height: 450px;
+    }
+
+    .hospital-image-1 img, .hospital-image-2 img {
+        max-width: 100%;
+    }
 
     .footer-links a {
-        font-size: 20px; 
+        font-size: 20px;
     }
 
     .logo, .footer-logo {
