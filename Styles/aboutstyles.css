@@ -78,6 +78,7 @@ header {
 .about-us-section {
     display: block;
     padding: 20px;
+    background-color: #b4d7fd;
 }
 
 .about-us-text, .about-us-image {
@@ -121,14 +122,44 @@ header {
 }
 
 .location {
-    padding: 15px;
-    background-color: #f9f9f9;
+    padding: 20px;
+    background-color: #b4d7fd;
 }
 
 .map-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* gap between the maps */
+    gap: 20px;
+}
+
+.map-branch {
+    text-align: center;
+}
+
+.branch-info-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.branch-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.branch-table th, .branch-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.branch-table th {
+    background-color: #007bff;
+    color: white;
+}
+
+.branch-table td {
+    background-color: #ffffff;
 }
 
 .map-branch h4 {
@@ -254,9 +285,15 @@ footer {
         justify-content: space-between;
     }
 
+    .map-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .map-branch {
         width: 48%;
     }
+
 
     .footer-links a {
         font-size: 18px; 
@@ -299,6 +336,7 @@ footer {
         font-size: 20px; 
         margin-bottom: 40px; 
     }
+
 
     .footer-links a {
         font-size: 20px; 

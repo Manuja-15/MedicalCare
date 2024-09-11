@@ -145,35 +145,94 @@ header {
 
 .doctor-photo-1 {
    
-    background-color: #ccc;
+    background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-emily.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: contain;
+    background-position: center;
     height: 50vh;
 }
 
 .doctor-photo-2 {
    
-    background-color: #ccc;
+    background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-james.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: contain;
+    background-position: center;
     height: 50vh;
 }
 
 .doctor-photo-3 {
    
-    background-color: #ccc;
+    background-color: #f9f9f9;
     margin-bottom: 10px;
     background-image: url("../Images/doctors/dr-michael.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    background-size: contain;
+    background-position: center;
     height: 50vh;
+}
+
+.doctor-photo-4 {
+   
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    background-image: url("../Images/doctors/dr-mike.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
+}
+
+.doctor-photo-5 {
+   
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    background-image: url("../Images/doctors/dr-david.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
+}
+
+.doctor-photo-6 {
+   
+    background-color:#f9f9f9;
+    margin-bottom: 10px;
+    background-image: url("../Images/doctors/dr-Anne\ brown.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 50vh;
+}
+
+.doctors-carousel {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 20px;
+}
+
+.doctor-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-photo-1,
+.doctor-photo-2,
+.doctor-photo-3,
+.doctor-photo-4,
+.doctor-photo-5,
+.doctor-photo-6 {
+    height: 150px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
 }
 
 .social-links a {
@@ -189,7 +248,7 @@ header {
 
 .social-links a {
     color: #454242; /*  icon color */
-    font-size: 24px; /*  icon size */
+    font-size: 20px; /*  icon size */
     text-decoration: none;
 }
 
@@ -293,8 +352,13 @@ footer {
         justify-content: space-between;
     }
 
+    .doctors-carousel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
     .doctor-item {
-        width: 30%;
+        
     }
 
     .social-links a {
@@ -333,13 +397,27 @@ footer {
         font-size: 20px;
     }
 
+    .doctors-carousel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        margin: auto;
+        
+        
+    }
+
+    .doctor-item{
+        width: 90%;
+        
+    }
+
     .social-links a {
-        font-size: 32px; 
+        font-size: 20px; 
     }
 
     .footer-content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
 
     }
 
