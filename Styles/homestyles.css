@@ -1,4 +1,4 @@
-/* Reset some basic elements */
+/* basic elements */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -123,6 +123,10 @@ footer {
     text-align: center;
 }
 
+.Para{
+    text-align: left;
+}
+
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -188,13 +192,13 @@ footer {
     background-size: cover;
     background-position: center;
     background-image: url('../Images/home/bck-groun-img.jpg');
-    background-color: rgba(0, 0, 0, 0.5); /* Fallback background color */
+    background-color: rgba(0, 0, 0, 0.5); /* background color */
 }
 
 .hero-content {
     position: relative;
-    z-index: 2; /* Ensures content appears above the background image */
-    color: white; /* Text color to contrast against the dark background */
+    z-index: 2; /*content infront of the background image */
+    color: white; /* Text color to see content with the dark background */
     text-align: center;
 }
 
@@ -205,12 +209,12 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make the image lighter */
-    z-index: 1; /* Ensures the overlay is between the background image and the content */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker overlay to make the image lighter */
+    z-index: 1; /* Make sure the overlay is between the background image and the content */
 }
 
 .hero h2 {
-    font-size: 1.5em; /* Smaller font size for mobile */
+    font-size: 1.5em; 
     margin-bottom: 10px;
 }
 
@@ -227,7 +231,7 @@ footer {
     border-radius: 5px;
 }
 
-/* Media Queries for Tablet */
+/*Styles for Tablet */
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -260,7 +264,7 @@ footer {
     }
 
     .hero h2 {
-        font-size: 2em; /* Larger font size for tablets */
+        font-size: 2em;
     }
 
     .hero p {
@@ -268,15 +272,15 @@ footer {
     }
 
     .footer-links a {
-        font-size: 18px; /* Larger font size on tablets */
+        font-size: 18px; 
     }
 
     .logo, .footer-logo {
-        font-size: 28px; /* Slightly larger text on tablets and up */
+        font-size: 28px; 
     }
 }
 
-/* Media Queries for Desktop */
+/* Styles for Desktop */
 @media (min-width: 1024px) {
     .container {
         margin: 0 auto;
@@ -302,7 +306,7 @@ footer {
     }
 
     .hero h2 {
-        font-size: 2.5em; /* Even larger font size for desktops */
+        font-size: 2.5em;  
     }
 
     .hero p {
@@ -318,10 +322,11 @@ footer {
     }
 
     .footer-links a {
-        font-size: 20px; /* Even larger font size on desktops */
+        font-size: 20px; 
     }
 
     .logo, .footer-logo {
-        font-size: 32px; /* Even larger text on desktops */
+        font-size: 32px;  
     }
+
 }

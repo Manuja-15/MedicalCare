@@ -1,4 +1,4 @@
-/* Reset some basic elements */
+/*basic elements */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -23,13 +23,13 @@ header {
 }
 
 .nav-logo {
-    height: 40px; /* Adjust the height as needed */
+    height: 40px; 
     vertical-align: middle;
     margin-right: 10px;
 }
 
 .footer-logo-img {
-    height: 40px; /* Adjust the height as needed */
+    height: 40px; 
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -38,8 +38,8 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333; /* Adjust the color as needed */
-    font-size: 24px; /* Adjust font size */
+    color: #333; 
+    font-size: 24px; 
 }
 
 .nav-links {
@@ -82,22 +82,22 @@ header {
 
 .about-us-text, .about-us-image {
     width: 100%;
-    margin-bottom: 20px; /* Adds space between text and image on mobile */
+    margin-bottom: 20px; /* Adds gap between the text and image */
 }
 
 .about-us-text {
-    padding-right: 0; /* Remove padding on mobile for full width */
+    padding-right: 0; 
 }
 
 .about-us-text h2 {
-    margin-top: 20px; /* Space above each heading */
-    font-size: 24px; /* Default font size for headings */
+    margin-top: 20px; /* gap above each heading */
+    font-size: 24px; 
 }
 
 .about-us-text p {
-    margin-bottom: 20px; /* Space below each paragraph */
-    line-height: 1.6; /* Improve readability */
-    font-size: 16px; /* Default font size for paragraphs */
+    margin-bottom: 20px; /* gap below paragraph */
+    line-height: 1.6; 
+    font-size: 16px; 
 }
 
 .about-us-image img {
@@ -128,7 +128,7 @@ header {
 .map-container {
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Space between the maps */
+    gap: 20px; /* gap between the maps */
 }
 
 .map-branch h4 {
@@ -150,6 +150,10 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+.Para{
+    text-align: left;
 }
 
 .footer-content {
@@ -182,17 +186,17 @@ footer {
 }
 
 .footer-links a {
-    color: #ffffff; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
 
 .footer-links a:hover {
-    color: #68acf5; /* Change link color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #68acf5; /*  link color on hovering */
+    text-decoration: underline; /* underlines with hover */
 }
 
-/* Media Queries for Tablet */
+/* Styles  for Tablet */
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -218,17 +222,17 @@ footer {
     }
 
     .about-us-text h2 {
-        font-size: 28px; /* Increase font size on tablets */
+        font-size: 28px; 
     }
 
     .about-us-text p {
-        font-size: 18px; /* Increase font size on tablets */
-        margin-bottom: 30px; /* Increase spacing between paragraphs on tablets */
+        font-size: 18px; 
+        margin-bottom: 30px; /* Increase gaps  */
     }
 
     .about-us-image {
         flex: 1;
-        margin-bottom: 0; /* Remove bottom margin when side by side */
+        margin-bottom: 0; /* Remove bottom margin */
     }
 
     .highlight-content {
@@ -255,15 +259,15 @@ footer {
     }
 
     .footer-links a {
-        font-size: 18px; /* Larger font size on tablets */
+        font-size: 18px; 
     }
 
     .logo, .footer-logo {
-        font-size: 28px; /* Slightly larger text on tablets and up */
+        font-size: 28px; 
     }
 }
 
-/* Media Queries for Desktop */
+/* Styles for Desktop */
 @media (min-width: 1024px) {
     .container {
         margin: 0 auto;
@@ -280,7 +284,7 @@ footer {
     }
 
     .about-us-section {
-        padding: 40px; /* Increase padding for larger screens */
+        padding: 40px; /* Increase padding */
     }
 
     .about-us-text {
@@ -288,19 +292,19 @@ footer {
     }
 
     .about-us-text h2 {
-        font-size: 32px; /* Further increase font size on desktops */
+        font-size: 32px; 
     }
 
     .about-us-text p {
-        font-size: 20px; /* Further increase font size on desktops */
-        margin-bottom: 40px; /* Increase spacing between paragraphs on desktops */
+        font-size: 20px; 
+        margin-bottom: 40px; 
     }
 
     .footer-links a {
-        font-size: 20px; /* Even larger font size on desktops */
+        font-size: 20px; 
     }
 
     .logo, .footer-logo {
-        font-size: 32px; /* Even larger text on desktops */
+        font-size: 32px; 
     }
 }

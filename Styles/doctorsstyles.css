@@ -1,4 +1,4 @@
-/* Reset some basic elements */
+/* basic elements */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
@@ -23,13 +23,13 @@ header {
 }
 
 .nav-logo {
-    height: 40px; /* Adjust the height as needed */
+    height: 40px; 
     vertical-align: middle;
     margin-right: 10px;
 }
 
 .footer-logo-img {
-    height: 40px; /* Adjust the height as needed */
+    height: 40px; 
     vertical-align: middle;
     margin-right: 10px;
 }
@@ -38,8 +38,8 @@ header {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #333; /* Adjust the color as needed */
-    font-size: 24px; /* Adjust font size */
+    color: #333; 
+    font-size: 24px; 
 }
 
 .nav-links {
@@ -98,7 +98,7 @@ header {
 .doctors-intro h2,
 .doctors-intro p {
     position: relative;
-    z-index: 2; /* Ensure the content is above the overlay */
+    z-index: 2; /* make sure the content is infront of the overlay */
 }
 
 .doctors-intro h2 {
@@ -184,17 +184,17 @@ header {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 10px; /* Space between the icons */
+    gap: 10px; /* gap between the icons */
 }
 
 .social-links a {
-    color: #454242; /* Default icon color */
-    font-size: 24px; /* Default icon size */
+    color: #454242; /*  icon color */
+    font-size: 24px; /*  icon size */
     text-decoration: none;
 }
 
 .social-links a:hover {
-    color: #68acf5; /* Change color on hover */
+    color: #68acf5; /* color on hover */
 }
 
 .carousel-navigation {
@@ -216,6 +216,10 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+.Para{
+    text-align: left;
 }
 
 .footer-content {
@@ -247,17 +251,17 @@ footer {
 }
 
 .footer-links a {
-    color: #ffffff; /* Default link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+    color: #ffffff; 
+    text-decoration: none; 
+    transition: color 0.3s ease, text-decoration 0.3s ease; 
 }
 
 .footer-links a:hover {
-    color: #68acf5; /* Change link color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #68acf5; /*  link color when hovering */
+    text-decoration: underline; /*  underlines with hover */
 }
 
-/* Media Queries for Tablet */
+/* Styles for Tablet */
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -294,7 +298,7 @@ footer {
     }
 
     .social-links a {
-        font-size: 28px; /* Larger icons on tablets */
+        font-size: 28px; 
     }
 
     .footer-content {
@@ -303,15 +307,15 @@ footer {
     }
 
     .footer-links a {
-        font-size: 18px; /* Larger font size on tablets */
+        font-size: 18px; 
     }
 
     .logo, .footer-logo {
-        font-size: 28px; /* Slightly larger text on tablets and up */
+        font-size: 28px; 
     }
 }
 
-/* Media Queries for Desktop */
+/* Styles for Desktop */
 @media (min-width: 1024px) {
     .container {
         margin: 0 auto;
@@ -330,7 +334,7 @@ footer {
     }
 
     .social-links a {
-        font-size: 32px; /* Even larger icons on desktops */
+        font-size: 32px; 
     }
 
     .footer-content {
@@ -344,10 +348,10 @@ footer {
     }
 
     .footer-links a {
-        font-size: 20px; /* Even larger font size on desktops */
+        font-size: 20px;
     }
 
     .logo, .footer-logo {
-        font-size: 32px; /* Even larger text on desktops */
+        font-size: 32px; 
     }
 }
