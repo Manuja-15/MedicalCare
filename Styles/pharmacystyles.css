@@ -129,7 +129,7 @@ header {
 .pharmacy-content {
     position: relative;
     padding: 20px;
-    background: url('../Images/pharmacy/bg-img.jpg') no-repeat center center; 
+    background: url('../Images/pharmacy/bg-img.webp') no-repeat center center; 
     background-size: cover;
     color: #ffffff;
     display: flex;

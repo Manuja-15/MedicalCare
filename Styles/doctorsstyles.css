@@ -114,7 +114,7 @@ header {
     position: relative;
     padding: 20px;
     text-align: center;
-    background: url('../Images/doctors/banner.jpg') no-repeat center center;
+    background: url('../Images/doctors/banner.webp') no-repeat center center;
     background-size: cover;
     color: #ffffff;
 }
@@ -184,7 +184,7 @@ header {
 
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    background-image: url("../Images/doctors/dr-emily.jpg");
+    background-image: url("../Images/doctors/dr-emily.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -195,7 +195,7 @@ header {
 
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    background-image: url("../Images/doctors/dr-james.jpg");
+    background-image: url("../Images/doctors/dr-james.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -206,7 +206,7 @@ header {
 
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    background-image: url("../Images/doctors/dr-michael.jpg");
+    background-image: url("../Images/doctors/dr-michael.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -217,7 +217,7 @@ header {
 
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    background-image: url("../Images/doctors/dr-mike.jpg");
+    background-image: url("../Images/doctors/dr-mike.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -228,7 +228,7 @@ header {
 
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    background-image: url("../Images/doctors/dr-david.jpg");
+    background-image: url("../Images/doctors/dr-david.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -239,7 +239,7 @@ header {
 
     background-color: #f9f9f9;
     margin-bottom: 10px;
-    background-image: url("../Images/doctors/dr-Anne\ brown.jpg");
+    background-image: url("../Images/doctors/dr-Anne\ brown.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
