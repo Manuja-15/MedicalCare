@@ -28,6 +28,35 @@ header {
     margin-right: 10px;
 }
 
+.sidebar{
+    list-style: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    color: #007bff;  
+}
+
 .footer-logo-img {
     height: 40px; 
     vertical-align: middle;
@@ -340,6 +369,10 @@ footer {
 @media (min-width: 1024px) {
     .container {
         margin: 0 auto;
+    }
+
+    .menu-btn{
+        display: none;
     }
 
     .pharmacy-content {
