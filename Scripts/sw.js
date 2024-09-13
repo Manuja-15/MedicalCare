@@ -2,12 +2,12 @@ self.addEventListener('install', event => {
     event.waitUntil(
       caches.open('v1').then(cache => {
         return cache.addAll([
-            '/',  // Root path for GitHub Pages
-            '/index.html',  // Homepage
-            '/styles/styles.css',  // CSS file
-            '/scripts/script.js',  // JavaScript file
-            '/favicons/favicon-192x192.png',  // Favicon 192x192
-            '/favicons/favicon-512x512.png'  // Favicon 512x512
+            '/MedicalCare',  // Root path for GitHub Pages
+            '/MedicalCare/index.html',  // Homepage
+            '/MedicalCare/styles/styles.css',  // CSS file
+            '/MedicalCare/scripts/script.js',  // JavaScript file
+            '/MedicalCare/favicons/favicon-192x192.png',  // Favicon 192x192
+            '/MedicalCare/favicons/favicon-512x512.png'  // Favicon 512x512
         ]);
       })
     );

@@ -67,8 +67,12 @@ header {
     margin-bottom: 10px;
 }
 
+.sidebar a{
+    text-decoration: none;
+}
+
 .sidebar a:hover {
-    color: #007bff;  
+    color: #007bff;
 }
 
 .nav-links {
