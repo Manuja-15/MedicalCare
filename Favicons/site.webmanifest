@@ -1,6 +1,6 @@
 {
-    "name": "hospital",
-    "short_name": "hospital",
+    "name": "MedicalCare",
+    "short_name": "MedCare",
     "start_url" : "/MedicalCare/index.html",
     "icons": [
         {
