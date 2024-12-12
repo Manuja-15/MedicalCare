@@ -98,22 +98,46 @@ if ('serviceWorker' in navigator) {
     });
 
     // Submit form functionality
-    function submitForm() {
+    document.addEventListener("DOMContentLoaded", () => {
         const form = document.getElementById("checkout-form");
-
+        form.addEventListener("submit", (event) => {
+            event.preventDefault(); // Prevent page reload
+    
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const address = document.getElementById("address").value;
+    
+            const deliveryDate = new Date();
+            deliveryDate.setDate(deliveryDate.getDate() + 3);
+    
+            alert(
+                `Thank you for your purchase, ${firstName} ${lastName}!\n\nYour order will be delivered to:\n${address}\n\nExpected delivery date: ${deliveryDate.toDateString()}`
+            );
+            
+            const form = document.getElementById("checkout-form");
+            form.reset();
+        });
+    });
+    
+    function submitForm(event) {
+        event.preventDefault(); // Prevent the form from reloading the page
+    
+        const form = document.getElementById("checkout-form");
+    
         const firstName = document.getElementById("first-name").value;
         const lastName = document.getElementById("last-name").value;
         const address = document.getElementById("address").value;
-
+    
         const deliveryDate = new Date();
         deliveryDate.setDate(deliveryDate.getDate() + 3);
-
+    
         alert(
             `Thank you for your purchase, ${firstName} ${lastName}!\n\nYour order will be delivered to:\n${address}\n\nExpected delivery date: ${deliveryDate.toDateString()}`
         );
-
+    
         form.reset(); // Reset the form fields
     }
+    
 });
 
 
